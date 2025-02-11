@@ -11,6 +11,7 @@ body {
     text-align: center;
     padding: 10px;
     font-size: 14px;
+    flex-wrap: wrap;
 }
 
 .top-bar a {
@@ -25,6 +26,7 @@ body {
     padding: 20px;
     background: white;
     border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
@@ -53,6 +55,12 @@ body {
     justify-content: space-between;
     padding: 50px;
     background: #f5f5f5;
+    height: 100vh; 
+}
+.hero-text {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
 }
 
 .hero-text h2 {
@@ -65,6 +73,17 @@ body {
     margin-bottom: 20px;
 }
 
+.hero-image {
+    width: 50%;
+    display: flex;
+    justify-content: center; 
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px; 
+    border-radius: 10px;
+}
 button {
     background: black;
     color: white;
@@ -81,12 +100,8 @@ button {
     font-size: 16px;
 }
 
-.hero-image img {
-    width: 400px;
-    border-radius: 10px;
-}
-
 .stats {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
     padding: 40px;
@@ -206,4 +221,10 @@ footer {
     .product {
         width: 100%;
     }
+}
+.top-selling h2 {
+    text-align: center; 
+    width: 100%; 
+    margin: 0 auto; 
+    font-size: 32px; 
 }
