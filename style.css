@@ -113,10 +113,17 @@ footer {
     text-align: center;
     padding: 20px;
 }
+.new-arrivals h2 {
+    text-align: center; 
+    width: 100%; 
+    margin: 0 auto; 
+    font-size: 32px; 
+}
 
 .brands {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
     align-items: center;
     padding: 20px;
@@ -137,4 +144,66 @@ footer {
     justify-content: space-between;
     gap: 30px;
     font-size: 18px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: calc(20% - 20px);
+    min-width: 200px;
+    flex: 1 1 auto;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-rating img {
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
 }
