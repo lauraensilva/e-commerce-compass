@@ -84,7 +84,7 @@ body {
     max-width: 500px; 
     border-radius: 10px;
 }
-button {
+.btn-shop-now {
     background: black;
     color: white;
     padding: 10px 20px;
@@ -92,12 +92,6 @@ button {
     cursor: pointer;
     font-size: 16px;
     border-radius: 50px;
-    background: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
 }
 
 .stats {
@@ -211,20 +205,103 @@ footer {
     width: 100px;
 }
 
-@media (max-width: 768px) {
-    .product {
-        width: calc(50% - 20px);
-    }
+.btn-view-all{
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
 }
 
-@media (max-width: 480px) {
-    .product {
-        width: 100%;
-    }
+.btn-view-all:hover {
+    background-color: #dfdfdf;
 }
+
 .top-selling h2 {
     text-align: center; 
     width: 100%; 
     margin: 0 auto; 
     font-size: 32px; 
+}
+.browse-dress-style {
+    padding: 5rem;
+    text-align: center;
+}
+
+.dress-style-container {
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dress-style-container h2 {
+    text-align: center; 
+    width: 100%; 
+    margin: 0 auto; 
+    font-size: 32px;
+}
+
+.dress-style-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.dress-style-card {
+    border-radius: 10px; 
+}
+
+.dress-style-card.casual img {
+    width: 55%;
+    height: 100%;
+    margin-right: 0%;
+}
+
+.dress-style-card.formal img {
+    width: 95%;
+    height: 100%;
+    margin-left: -46%;
+}
+
+.dress-style-card.party img {
+    width: 90%;
+    height: auto; 
+    margin-left: 23%;
+}
+
+.dress-style-card.gym img {
+    width: 60%;
+    height: 88%;
+    margin-right: 10%; 
+}
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+    .product {
+        width: 100%;
+    }
+    .browse-dress-style {
+        padding: 2rem;
+    }
+
+    .dress-style-container {
+        padding: 1rem;
+    }
+
+    .dress-style-grid {
+        grid-template-columns: 1fr; /* Uma coluna em dispositivos móveis */
+    }
+
+    .dress-style-card.casual img,
+    .dress-style-card.formal img,
+    .dress-style-card.party img,
+    .dress-style-card.gym img {
+        width: 100%; /* Restaura o tamanho original das imagens */
+        margin-left: 0; /* Remove o deslocamento para a esquerda */
+        height: auto; /* Mantém a proporção */
+    }
 }
