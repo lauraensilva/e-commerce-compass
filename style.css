@@ -407,7 +407,6 @@ body {
 }
 
 .newsletter-section h2 {
-    font-family: "Integral CF";
     font-size: 1.5em;
     margin: 0; /* Remove margens padrão */
     text-align: center; /* Centraliza o texto */
@@ -440,7 +439,6 @@ body {
 
 .email-input {
     border: none;
-    font-family: "Satoshi regular";
     font-size: 1em;
     outline: none; /* Remove o contorno ao focar */
     width: 100%; /* Largura total */
@@ -454,7 +452,6 @@ body {
     border: none;
     border-radius: 20px; 
     cursor: pointer;
-    font-family: "Satoshi";
     transition: background-color 0.3s;
     font-size: 1em;
     width: 100%; /* Largura total */
@@ -463,6 +460,101 @@ body {
 
 .btn-submit:hover {
     background-color: #F0F0F0;
+}
+
+footer {
+    background-color: #F0F0F0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-branding {
+    flex: 1;
+    max-width: 40%;
+}
+
+.footer-branding h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.footer-branding p {
+    color: #00000099;
+    line-height: 1.6;
+    font-size: 0.95em;
+    text-align: left;
+}
+
+.social-icons img {
+    width: 120px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.footer-links {
+    flex: 1;
+    max-width: 60%;
+}
+
+.footer-settings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-settings div {
+    margin: 0 10px;
+}
+
+.footer-settings h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-settings ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-settings ul li a {
+    color: #00000099; /* Define a cor dos links com opacidade */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    transition: color 0.3s ease; /* Adiciona uma transição suave para a cor */
+}
+
+.footer-settings ul li a:hover {
+    color: #000000; /* Define a cor dos links ao passar o mouse (opcional) */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+}
+
+.payment-methods     img {
+    width: 200px; 
+    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -481,15 +573,15 @@ body {
     }
 
     .dress-style-grid {
-        grid-template-columns: 1fr; /* Uma coluna em dispositivos móveis */
+        grid-template-columns: 1fr; 
     }
 
     .dress-style-card.casual img,
     .dress-style-card.formal img,
     .dress-style-card.party img,
     .dress-style-card.gym img {
-        width: 100%; /* Restaura o tamanho original das imagens */
-        margin-left: 0; /* Remove o deslocamento para a esquerda */
-        height: auto; /* Mantém a proporção */
+        width: 100%;
+        margin-left: 0; 
+        height: auto;
     }
 }
