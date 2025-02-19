@@ -206,17 +206,30 @@ body {
 }
 
 .btn-view-all{
-    background: white;
-    color: black;
-    padding: 10px 20px;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 358px;
+    height: 46px;
+    padding: 16px 54px;
+    border-radius: 62px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: transparent;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: var(--cor-preto);
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 50px;
 }
 
 .btn-view-all:hover {
     background-color: #dfdfdf;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 40px 0;
 }
 
 .top-selling h2 {
@@ -583,5 +596,12 @@ hr {
         width: 100%;
         margin-left: 0; 
         height: auto;
+    }
+    .container{
+        background-image: url(../img/casal-da-moda-posando-foto-inteira.png);
+        height: 700px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position: bottom;
     }
 }
